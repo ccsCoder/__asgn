@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shopping Cart</title>
+		<link rel="stylesheet" media="screen and (min-device-width:500px)" type="text/css" href="css/style.css">
+		<link rel="stylesheet" media="screen and (max-device-width:499px)" type="text/css" href="css/style_mobile.css">
+
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+		
+		<script type="text/javascript" src="js/entities.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script src="js/application.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body class="remodal-bg">
+			<header>
+				<div class="cart-header">
+					<h1>Your Shopping Bag</h1>
+				</div>
+				<div class="hrule">
+				</div>
+			</header>
+			<section>
+				<div id="maincontainer">
+				<header>
+					<div class="column-prominent">
+						3 ITEMS
+
+					</div>
+					<div class="column column-prominent-offset-1">
+						SIZE
+
+					</div>
+					<div class="column column-prominent-offset-2">
+						QTY
+
+					</div>
+					<div class="column column-prominent-offset-3">
+						PRICE
+
+					</div>
+
+				</header>
+				<section>
+					<div class="column-spacer hrule-prominent">
+					</div>
+				</section>
+
+				<section>
+					 	<article id="productHolder">
+							<!-- <div class="column-prominent ">
+								<div class="product">
+									<div class="product_image">
+										<img src="assets/T1.jpg" alt="image" height="150" width="150"/>
+									</div>
+									<div class="product_description product_entry">
+										<p class="item-text item-bold">
+											solid green cotton tshirt
+										</p>
+										<p class="description">
+											Style #: MS298232323
+										</p>
+										<p class="description">
+											Colour: Blue
+										</p>
+									</div>
+									<div class="product_actions">
+										<span class="item-text">EDIT | X REMOVE | SAVE FOR LATER </span>
+									</div>
+								</div>
+							</div>
+							<div class="column column-prominent-offset-1">
+								<div class="product_size product_entry"> 
+									<span class="item_text">S</span>
+								</div>
+							</div>
+							<div class="column column-prominent-offset-2">
+								<div class="product_quantity item_text">
+									1
+								</div>
+							</div>
+							<div class="column column-prominent-offset-3">
+								<div class="product_entry">
+									<sup>$</sup><span class="item_text product_price item_bold">200</span>
+								</div>
+								
+							</div>
+							<div class="hrule-prominent"></div> -->
+						</article>
+					
+				</section>
+			</div>
+			</section>
+		<section>
+
+			<article>
+				<div id="totalsection">
+					<div class="column-prominent"> 
+						<div class="help-text">
+							<p class="item_text item-bold description">
+								Need Help or have Questions ?
+							</p>
+							<p class="item_text description">
+								Call customer Service at
+								1-800-9909-0000
+							</p>
+
+							<p class="item_text item-underline description">
+								Chat with one of our stylists
+							</p>
+							<p class="item_text item-underline description">
+								See return &amp; exchange policy
+							</p>
+
+						</div>
+					</div>
+					<div class="column-prominent column-prominent-offset-2">
+						<div class="product_description">
+							<div class="promos">
+								<span class="item-text">enter promotion code or gift card</span>
+								<input class="couponInput" type="text"/>
+								<button class="couponInput">APPLY</button>
+							</div>
+							<div class="hrule-prominent hrule-prominent-small"></div>
+						</div>
+						<div class="labelcontainer">
+							<p class="item-text item-bold">subtotal</p>
+							<p class="item-text item-bold">promotion code <strong>JF10</strong> applied</p>
+							<p class="item-text item-bold">estimated shipping*</p>
+							<p class="item-text description">You qualify for free shipping because your order is over $50</p>
+						</div>
+						<div class="pricecontainer">
+							<p>	<sup>$</sup><span class="item_text product_price item_bold">37.00</span> </p>
+							<p>	-<sup>$</sup><span class="item_text product_price item_bold">37.00</span> </p>
+							<p class="item_text item-bold">	FREE</p>
+						</div>
+						<div class="hrule hrule-small"></div>
+						<div class="labelcontainer">
+							<p class="item-text item-bold">estimated total</p>
+							<p class="item-text description">tax will be applied during checkout</p>
+						</div>
+						<div class="pricecontainer">
+							<p class="item_text"> &nbsp;	</p>
+							<p>	<sup>$</sup><span class="item_text product_price item_bold product_price_largest">30.00</span> </p>
+						</div>
+						<div class="product_description">
+							<div class="hrule-prominent hrule-prominent-small"></div>
+						</div>
+						<div class="checkout-section">
+							<span class="item-text item-underline">continue shopping &nbsp;</span>
+							<button class="action-button-emphasized">CHECKOUT</button>
+						</div>
+						<div class="checkout-section">
+							<img src="assets/lock.jpg" alt='lock'/><span class="item-text description">Secure checkout. Shopping is always safe &amp; secure</span>
+						</div> 
+					</div>
+				</div>
+				
+			</article>
+		</section>
+		<div id="modal" style="display:none">
+			<div class="column-prominent">
+				<div class="hrule-prominent hrule-prominent-small"></div>
+				<div class="item-text item-bold"> PAISELY JEANS </div>
+				<p>	<sup>$</sup><span class="item_text product_price item_bold product_price_largest">30.00</span> </p>
+				<div>
+					<input type="text" id="editedQty" style="max-width:50px" />
+				</div>
+				<p></p>
+				<button class="action-button-emphasized" id="editButton">EDIT</button>
+
+			</div>
+			<div class="column-prominent column-prominant-offset-1">
+				<img src="assets/P1.jpg"/>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
